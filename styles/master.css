@@ -1,3 +1,26 @@
 body{
-  background: pink;
+  background: #f4f4f4;
+  font-family: 'Raleway', sans-serif;
+}
+section {
+  border-bottom: 2px solid red;
+  min-height: 55vh;
+}
+#main-menu{
+  background: white;
+  height: 100%;
+  width: 320px;
+  position: absolute;
+  top: 0;
+  left: -320px;
+  transition: 1s all ease;
+
+}
+#main-menu:target{
+  left: 0px;
+}
+.fermerLeMenu{
+  display: flex;
+  justify-content: flex-end;
+	align-items: flex-start;
 }
