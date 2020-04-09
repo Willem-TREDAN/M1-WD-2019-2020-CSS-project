@@ -6,21 +6,75 @@ section {
   border-bottom: 2px solid red;
   min-height: 55vh;
 }
+@media screen and (min-width: 640px) {
+  a.bouton1{
+    display: none;
+  }
+  #main-menu{
+    display: flex;
+  	flex-direction: row;
+  	flex-wrap: nowrap;
+    justify-content: center;
+
+  }
+  ul {
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    list-style-type: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  ul a{
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 640px) {
 #main-menu{
   background: white;
   height: 100%;
-  width: 320px;
+  width: 280px;
   position: absolute;
   top: 0;
+  transform: scale(0, 0);
   left: -320px;
+  padding-top: 30px;
   transition: 1s all ease;
-
+  display: flex;
+  justify-content: right;
+  animation-duration: 3s;
 }
+nav{
+  transform-origin: top left;;
+}
+
 #main-menu:target{
   left: 0px;
+  transform: scale(1, 1);
 }
+
 .fermerLeMenu{
-  display: flex;
-  justify-content: flex-end;
-	align-items: flex-start;
+position: absolute;
+right: 10px;
+}
+
+ul{
+  list-style-type: none;
+}
+}
+a:link
+{
+text-decoration:none;
+}
+
+a.bouton1 {
+padding: 10px 10px;
+background: blue;
+color: white;
+height: 25px;
+}
+a.bouton1:hover {
+background: red;
 }
