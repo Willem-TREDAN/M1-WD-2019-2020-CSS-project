@@ -4,7 +4,7 @@ body{
 }
 section {
   border-bottom: 2px solid red;
-  min-height: 55vh;
+  min-height: 700px;
 }
 @media screen and (min-width: 640px) {
   a.bouton1{
@@ -45,9 +45,10 @@ section {
   display: flex;
   justify-content: right;
   animation-duration: 3s;
+  z-index: 1;
 }
 nav{
-  transform-origin: top left;;
+  transform-origin: top left;
 }
 
 #main-menu:target{
@@ -77,4 +78,96 @@ height: 25px;
 }
 a.bouton1:hover {
 background: red;
+}
+.circle {
+position: absolute;
+background: #4c4c4c;
+border-radius: 50%;
+height: 300px;
+width: 300px;
+margin: 200px;
+text-align: center;
+line-height: 40px;
+color: white;
+font-size: 1.2em;
+animation:spin 10s linear infinite;
+}
+@keyframes spin
+{
+ 100%
+ {
+   -webkit-transform: rotate(360deg);
+   transform:rotate(360deg);
+   }
+ }
+ .circle2 {
+
+   position: absolute;
+  background: #3a3a3a;
+  border-radius: 50%;
+  height: 240px;
+  width: 240px;
+  margin: 230px;
+  text-align: center;
+  line-height: 40px;
+  color: white;
+  font-size: 1.2em;
+  animation:spin2 6s linear infinite;
+ }
+ @keyframes spin2
+ {
+    100%
+    {
+      -webkit-transform: rotate(-360deg);
+      transform:rotate(-360deg);
+      }
+    }
+    .circle3 {
+
+      position: absolute;
+     background: #2b2b2b;
+     border-radius: 50%;
+     height: 180px;
+     width: 180px;
+     margin: 260px;
+     text-align: center;
+     line-height: 40px;
+     color: white;
+     font-size: 1.2em;
+     animation:spin3 20s linear infinite;
+    }
+    @keyframes spin3
+    {
+       100%
+       {
+         -webkit-transform: rotate(360deg);
+         transform:rotate(360deg);
+         }
+       }
+       .circle4 {
+
+         position: absolute;
+        background: #1c1c1c;
+        border-radius: 50%;
+        height: 120px;
+        width: 120px;
+        margin: 290px;
+        text-align: center;
+        line-height: 170px;
+        color: black;
+        font-size: 1.2em;
+        animation:spin4 5s linear infinite;
+       }
+       @keyframes spin4
+       {
+          100%
+          {
+            -webkit-transform: rotate(-360deg);
+            transform:rotate(-360deg);
+            }
+          }
+.DJ{
+  position: absolute;
+  margin: 147px;
+
 }
