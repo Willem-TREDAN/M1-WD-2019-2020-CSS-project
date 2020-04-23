@@ -5,7 +5,7 @@
   grid-template-columns: repeat(6, 1fr);
   grid-gap: 10px;
   grid-auto-rows: minmax(100px, auto);
-
+  text-align: center;
 }
 
 /* Webfont: OpticianSans-Regular */@font-face {
@@ -16,13 +16,18 @@
     font-weight: normal;
     text-rendering: optimizeLegibility;
 }
+
 body{
   font-family: 'OpticianSans';
 }
-p {
-  border: solid 1px green;
-  font-size: 7em;
 
+div {
+  border: solid 1px green;
+  font-size: 4em;
+  margin: 0;
+}
+figcaption {
+  font-size: 0.3em;
 }
 
 #abecedaire:target {
@@ -30,4 +35,14 @@ p {
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 10px;
   grid-auto-rows: minmax(100px, auto);
+  text-align: left;
+}
+@media screen and (max-width: 1200px) {
+  #abecedaire {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    text-align: left;
+  }
 }
