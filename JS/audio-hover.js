@@ -1,10 +1,18 @@
-var $audio = $('#audio');
-var $audioPlayer = $('.audio-player');
+function play(idPlayer, control) {
+    var player = document.querySelector('#' + idPlayer);
 
-$audioPlayer.on('mouseenter focus', function () {
-  $audio.get(0).play();
-});
+    if (player.paused) {
+        player.play();
 
-$audioPlayer.on('mouseleave blur', function () {
-  $audio.get(0).pause();
-});
+    } else {
+        player.pause();
+        
+    }
+}
+
+function resume(idPlayer) {
+    var player = document.querySelector('#' + idPlayer);
+
+    player.currentTime = 0;
+    player.pause();
+}
