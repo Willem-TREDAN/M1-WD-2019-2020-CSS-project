@@ -9,23 +9,46 @@
 }
 
 /* Webfont: OpticianSans-Regular */@font-face {
-    font-family: 'OpticianSans';
-    src: url('../font/Optiker-K.woff2') format('woff2'), /* Modern Browsers */
-         url('../font/Optiker-K.ttf') format('truetype'); /* Safari, Android, iOS */
-    font-style: normal;
-    font-weight: normal;
-    text-rendering: optimizeLegibility;
+    font-family: 'Palace';
+    src: url('../font/Palace.ttf') format('truetype'); /* Safari, Android, iOS */
+
 }
-h1{
+
+header h1{
+  font-size: 200%;
   text-align: center;
+  display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+    font-weight: normal;
 }
 body{
-  font-family: 'OpticianSans';
+  font-family: 'Palace';
 }
+
+html{
+  background-image: url("../images/maquette-Willy.png");
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-position: right;
+  background-attachment:fixed;
+
+
+}
+
 header{
-position: fixed;
+
 height: 200px;
+font-size: 300%;
+
 }
+header a{
+  margin: 15px;
+
+  }
 svg {
   width: 100%;
 }
@@ -49,6 +72,12 @@ svg:hover #Vinyle_1_{
      }
    }
 
+#PochetteA .st3{
+  fill: blue !important;
+}
+
+
+
 #abecedaire div {
   font-size: 4em;
   margin: 0;
@@ -69,6 +98,7 @@ position: relative;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 10px;
+  width: 50%;
   grid-auto-rows: minmax(100px, auto);
   text-align: left;
 }
@@ -79,5 +109,12 @@ position: relative;
     grid-gap: 10px;
     grid-auto-rows: minmax(100px, auto);
     text-align: left;
+  }
+  svg {
+    width: 50%;
+  }
+  html{
+    background-attachment:fixed;
+    background-size: cover;
   }
 }

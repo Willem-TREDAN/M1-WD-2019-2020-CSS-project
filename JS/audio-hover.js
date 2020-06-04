@@ -6,7 +6,6 @@ function play(idPlayer, control) {
 
     } else {
         player.pause();
-        
     }
 }
 
